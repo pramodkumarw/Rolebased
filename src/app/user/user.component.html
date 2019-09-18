@@ -1,0 +1,10 @@
+
+<div>
+  <ul class="list-inline">
+    <li><a [routerLink]="['./']" routerLinkActive="isActive" [routerLinkActiveOptions]="{exact:true}">Signin</a></li>
+    <li><a [routerLink]="['signup']" routerLinkActive="isActive" [routerLinkActiveOptions]="{exact:true}">Singup</a></li>
+    <li><a [routerLink]="['/home']" routerLinkActive="isActive" [routerLinkActiveOptions]="{exact:true}">home</a></li>
+  </ul>
+  <hr>
+  <router-outlet></router-outlet>
+</div>

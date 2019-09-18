@@ -1,0 +1,12 @@
+<div>
+    <ul class="list-inline">
+       
+        <li *ngIf="auth.isUserinRoles(['admin'])"><a [routerLink]="['/admin']" routerLinkActive="isActive" [routerLinkActiveOptions]="{exact:true}">Admin</a></li>
+        <li><a  (click)="logout()" routerLink="">Logout</a></li>
+      </ul>
+      <hr>
+      <pre>
+        {{userClaims|json}}
+      </pre>
+    
+</div>
